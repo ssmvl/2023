@@ -1,0 +1,8 @@
+.jspsych-mfid { font-size: 16pt; line-height: 24pt; }
+.jspsych-mfid .mfid-text, .jspsych-mfid .mfid-img { margin: 8pt 0; }
+.jspsych-mfid .mfid-text { min-width: 720px; min-height: 80pt; }
+.jspsych-mfid .resp-key { display: inline-block; min-width: 18pt; padding: 0 3pt;
+  border: 1px solid #999; border-radius: 4px; background-color: #f9f9f9;}
+.jspsych-mfid .hint { color: #888; }
+.jspsych-mfid .break-bar-outer { margin: 0 auto; width: 150px; height: 30px; border: 1px solid #aaa; border-radius: 4px; }
+.jspsych-mfid .break-bar-inner { height: 30px; border-radius: 3px; background-color: #ddd; }
