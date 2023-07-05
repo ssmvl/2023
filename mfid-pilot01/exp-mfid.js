@@ -21,20 +21,18 @@ timeline.push({
   type: jsPsychBrowserCheck,
   skip_features: ['webaudio', 'webcam', 'microphone'],
   inclusion_function: function(data) {
-    return ['chrome', 'edge-chromium', 'firefox', 'safari'].includes(data.browser) && (data.mobile === false);
+    return ['chrome', 'edge-chromium', 'firefox'].includes(data.browser) && (data.mobile === false);
   },
   exclusion_message: function(data) {
     var last_msg = data.mobile ?
       '<p>You must use a desktop/laptop computer to participate in this experiment.</p>' :
       ('edge' == data.browser ?
-        '<p>You must use a newer version of Edge (released in or after 2020), Chrome, Firefox, or Safari to participate in this experiment.</p>' :
-        '<p>You must use Chrome, Edge, Firefox, or Safari to participate in this experiment.</p>');
+        '<p>You must use a newer version of Edge (released in or after 2020) to participate in this experiment.</p>' :
+        '<p>You must use Chrome, Edge, or Firefox to participate in this experiment.</p>');
     if (window.hasOwnProperty('RUN_ID')) {  // cognition.run workaround
       window.LAST_MSG = last_msg;
-      return '';
-    } else {
-      return last_msg;
     }
+    return last_msg;
   }
 });
 
