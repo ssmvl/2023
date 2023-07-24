@@ -124,7 +124,7 @@ timeline.push({
 // general instruction
 timeline.push({
   type: jsPsychHtmlKeyboardResponse,
-  css_classes: ['jspsych-instr'],
+  css_classes: ['jspsych-mfid'],
   timeline: [
     { stimulus:
         `<p>In this experiment, you will use J, K, L keys<br>
